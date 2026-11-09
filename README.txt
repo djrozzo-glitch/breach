@@ -13,3 +13,20 @@ Mechanics:
 Assets: assets/tiles, assets/objects, assets/branding, assets/screens and assets/ui.
 
 No build tools or external dependencies.
+
+GAMEPLAY 2.1 — PROGRESSIVE DIFFICULTY
+Mission 01: basic routing, no TRACE, no firewalls, no splitter or booster.
+Mission 02: routing practice, no advanced mechanics.
+Mission 03: larger routing practice, no advanced mechanics.
+Mission 04: ICE firewalls and TRACE detection are introduced.
+Mission 05: splitter + a required relay branch are introduced.
+Mission 06: boosters and 8-hop packet energy limit are introduced.
+Missions 07-08: combined mechanics and tougher networks.
+Progress and records remain in localStorage under breach-save-v1.
+
+
+Visual & Audio Polish update:
+- animated signal packet with brighter active route feedback
+- success/failure screen and board FX
+- richer UI transitions and shimmer/glitch polish
+- ambient synth bed and improved SFX for rotate, inject, relay, booster, success, failure, TRACE alert
