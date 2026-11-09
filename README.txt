@@ -1,33 +1,15 @@
-BREACH.exe — Signal Routing Puzzle (illustrated edition)
-==========================================================
+BREACH.exe — Gameplay 2.0
 
-HOW TO PLAY
-1. Open index.html in a desktop or mobile browser (Chrome, Safari, Firefox).
-2. Press НАЧАТЬ ВЗЛОМ or МИССИИ.
-3. Click/tap circuit tiles to rotate them 90 degrees.
-4. Connect ENTRY to SERVER and press INJECT SIGNAL.
-5. Progress and mission ratings are stored in the browser (localStorage).
+Open index.html in a modern browser. Works offline and on GitHub Pages.
 
-CONTROLS
-- Click/tap: rotate tile
-- INJECT SIGNAL: test connected network
-- HINT: automatically align one incorrect tile, once per attempt
-- RESET: restore initial randomized layout
-- Sound toggle available on mission map and in gameplay
+Mechanics:
+- Rotate channels by clicking/tapping. Connect ENTRY to SERVER.
+- Mission 3 onward: ICE FIREWALL blocks routing; rotating nodes increases TRACE. Failed injections increase TRACE 18%. 100% means detection.
+- Mission 4 onward: a SPLITTER node branches to a fixed RELAY (marked R). Both RELAY and SERVER must receive packets.
+- Mission 5 onward: packets can travel up to 8 connected nodes before expiring; BOOSTER nodes (lightning symbols) replenish the packet.
+- Reset costs +7% TRACE; a hint costs +6%. Early missions omit TRACE.
+- Progress and sound settings stored in localStorage.
 
-DEPLOYMENT
-This is a static offline-first browser game. Upload all files in this folder to
-GitHub Pages or any static web host. Keep the assets/ subfolders intact.
-No build, dependencies, API keys or network connection required.
+Assets: assets/tiles, assets/objects, assets/branding, assets/screens and assets/ui.
 
-ART / ASSETS
-Original generated artwork has been sliced into separate PNG files:
- assets/tiles/     16 game tiles + atlas
- assets/objects/   16 decorative object assets + atlas
- assets/ui/        16 interface elements + atlas
- assets/branding/  4 branding elements + atlas
- assets/screens/   4 cinematic panel artworks + atlas
- assets/keyart.png complete key art
-
-Some object/UI assets are reserved for future mechanics and aren't yet used
-in gameplay. Core routing gameplay uses tile sprites and CSS visual effects.
+No build tools or external dependencies.
