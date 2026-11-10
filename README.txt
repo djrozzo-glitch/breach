@@ -1,14 +1,26 @@
+BREACH.exe — Release Candidate 4.0 (English)
 
-CAMPAIGN EXPANSION 3.0 (November 2026)
-=====================================
-- 50 reproducible missions across 5 corporations (10 per corporation)
-- Corporation tabs and chapter-specific mission selection with progress counters
-- Four mechanics introduced gradually after three basic missions
-- Onboarding popups shown once per new mechanic/corporation, saved in browser storage
-- Distinct neon accent colors per corporation
-- Campaign ending at mission 50
-- Existing save key breach-save-v1 is retained: previous unlocks, stars and sound settings transfer automatically
-- All 50 levels validated programmatically with solved network layouts (including relay and booster energy budget)
-- The game runs locally by opening BREACH-exe/index.html, or on GitHub Pages
+HOW TO PLAY
+Open index.html in a browser, or upload the contents of this folder to GitHub Pages.
+Rotate network nodes by tapping/clicking. Connect ENTRY to SERVER, then inject the signal.
+The first three missions teach basic routing. Special mechanics unlock after that.
 
-Controls: click/tap any non-fixed conduit to rotate by 90 degrees. Press INJECT SIGNAL to test route.
+WHAT'S NEW
+- English UI, tutorials, mission descriptions, errors, status messages and results
+- 50 missions in 5 corporations, preserving older Campaign 3.0 save data
+- Daily Breach: same puzzle every UTC calendar day (local scores saved per browser)
+- Installable Progressive Web App with offline caching (HTTPS or localhost required)
+- Responsive controls, smaller screen layout, home screen icons and app manifest
+- Web Audio effects and ambient soundtrack (generated directly in the browser)
+
+INSTALL / OFFLINE
+Deploy via HTTPS (GitHub Pages), visit the site, choose Install from the browser menu.
+Offline use is available after the assets have cached on first load.
+Opening index.html using file:// will launch the game, but PWA installation and the service worker require HTTPS or localhost.
+
+DAILY RECORDS
+Saved locally on this device, not an online/global leaderboard. Daily puzzle changes at 00:00 UTC.
+Daily challenges do not advance campaign unlocks or affect campaign stars.
+
+NOTE
+Delete test-campaign.html from any old hosting deployment; it is not needed in production.
